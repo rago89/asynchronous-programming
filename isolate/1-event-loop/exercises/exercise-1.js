@@ -21,6 +21,7 @@ const callback2 = () => {
   log("cb 2:", test);
   console.assert(test, 'x should be "javascript"');
 };
+
 setTimeout(callback2, 2000);
 
 const callback3 = () => {
