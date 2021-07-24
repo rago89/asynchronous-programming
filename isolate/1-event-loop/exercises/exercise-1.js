@@ -21,7 +21,7 @@ const callback2 = () => {
   log('cb 2:', test);
   console.assert(test, 'x should be "javascript"');
 };
-setTimeout(callback2, 1500);
+setTimeout(callback2, 2000);
 
 const callback3 = () => {
   x += 'sc';
@@ -33,7 +33,7 @@ const callback4 = () => {
   x += 'pt';
   log('cb 4:', x);
 };
-setTimeout(callback4, 1000);
+setTimeout(callback4, 1500);
 
 x += '';
 
