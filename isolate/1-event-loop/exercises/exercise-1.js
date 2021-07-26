@@ -6,7 +6,7 @@ const log = labeledLogger(Date.now());
 
 let x = '';
 
-x += 'ja';
+x += 'java';
 
 const callback1 = () => {
   x += 'ri';
@@ -14,7 +14,7 @@ const callback1 = () => {
 };
 setTimeout(callback1, 1000);
 
-x += 'va';
+x += '';
 
 const callback2 = () => {
   const test = x === 'javascript';
