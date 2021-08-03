@@ -12,7 +12,7 @@ import { origin } from '../origin.js';
  */
 export const limitedResource = async (resourceType = '', limit = 1) => {
   // --- generate and declare your resource's URL ---
-  const URL = _;
+  const URL = `${origin}/${resourceType}?limit=${limit}`;
 
   // --- fetch, validate and parse the API data (this works!) ---
   const encodedURL = encodeURI(URL);
