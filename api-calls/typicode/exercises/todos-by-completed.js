@@ -1,4 +1,4 @@
-import { origin } from '../origin.js';
+import { origin } from "../origin.js";
 
 /**
  * Fetches all of the completed or incomplete todos from the jsonplaceholder.typicode.com API.
@@ -8,10 +8,10 @@ import { origin } from '../origin.js';
  * @returns {Promise<array>} A promise that resolves to an array of todos.
  * @throws {Error} HTTP error! status: {number}
  */
-export const todosByCompleted = async () => {
+export const todosByCompleted = async (completed = true) => {
   // --- declare your resource's URL ---
   // use params to fetch only the todos you need
-  const URL = _;
+  const URL = `${origin}/todos?completed=${completed}`;
 
   // --- fetch, validate and parse the API data (this works!) ---
   const encodedURL = encodeURI(URL);
